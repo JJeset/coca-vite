@@ -1,0 +1,10 @@
+@import './burger';
+@import './flex';
+@import './font-face';
+@import './media';
+
+@mixin flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,4 +9,11 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        includePaths: ['src/scss'],
+      },
+    },
+  },
 });
