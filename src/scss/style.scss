@@ -1,10 +1,3 @@
-@import './base/_base_index';
 @import './mixins/index';
-
-.app {
-  @include flex-all-center;
-  height: 98vh;
-  background-color: var(--neutral-color-10);
-  color: var(--neutral-color-100);
-  font-size: 40px;
-}
+@import './base/base_index';
+@import './globals/index';
