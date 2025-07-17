@@ -1,6 +1,65 @@
 .header {
+  padding: 25px 0 22px;
   &__container {
     @include flex-all-between;
+  }
+
+  &__right {
+    @include flex-align-center;
+    gap: 111px;
+  }
+
+  &__switcher {
+    position: relative;
+    border-radius: 13.5px;
+    background-color: var(--neutral-color-130);
+    width: 63px;
+    height: 27px;
+    flex-shrink: 0;
+    transform: translateY(8px);
+
+    transition: background-color var(--transition);
+
+    &-checkbox {
+      appearance: none;
+    }
+
+    &:has(&-checkbox:checked) {
+      background-color: var(--neutral-color-60);
+
+      &::before {
+        left: 38px;
+        background-color: var(--primary-color-50);
+      }
+    }
+
+    &-text {
+      color: #000;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+    }
+
+    &::before {
+      content: '';
+      top: 2px;
+      left: 3px;
+      position: absolute;
+      display: inline-block;
+      border-radius: 13.5px;
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
+      background-color: var(--neutral-color-120);
+
+      transition:
+        left var(--transition),
+        background-color var(--transition);
+    }
   }
 }
 
