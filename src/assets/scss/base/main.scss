@@ -64,12 +64,13 @@ button {
 }
 
 .container {
-  max-width: calc(var(--container-width) + var(--container-padding) * 2);
-  margin: 0 var(--container-padding);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  max-width: calc(var(--container-width) + (var(--container-padding) * 2));
 }
 
 .hidden {
   font-size: 0;
   opacity: 0;
-  display: none;
+  visibility: hidden;
 }
