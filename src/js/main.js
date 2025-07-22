@@ -1,10 +1,8 @@
 import '../assets/scss/style.scss';
 
-const checkbox = document.getElementById('theme-toggle');
-const body = document.body;
+//components
+import { useTheme } from './components/theme.js';
+import { useBurger } from './components/burger.js';
 
-if (checkbox) {
-  checkbox.addEventListener('change', () => {
-    body.setAttribute('data-theme', checkbox.checked ? 'dark' : 'light');
-  });
-}
+useTheme();
+useBurger();
