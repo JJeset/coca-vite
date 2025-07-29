@@ -11,5 +11,7 @@
         "parser": "scss"
       }
     }
-  ]
+  ],
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "auto"
 }
